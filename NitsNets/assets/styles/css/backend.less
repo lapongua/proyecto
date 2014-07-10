@@ -1,0 +1,134 @@
+@import "comunes.less";
+
+/* COMUNES */
+
+html,body{ 
+    height: 100%;
+}
+
+body > .container{width: 100%; padding: 0 20px;}
+.bottom { position: absolute; bottom: 0;}
+.relative{position: relative;}
+.glyphicons-xs{font-size: 0.8em;}
+
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 20px;
+    top:25px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+.form-control {
+    padding-left: 25px;
+}
+select.form-control{padding-left: 5px;}
+
+.form-control + .glyphicon {
+    position: absolute;
+    left: 0px;
+    padding: 10px 24px;
+}
+.badge{background-color: @azul;}
+.fa-star{color:@amarillo;}
+
+table
+{
+    h2,h3,h4,h5{margin: 0;}
+    h2 a{font-size: 19px; line-height: 23px; color: @azul;
+         &:hover{color: @azul}
+    }
+    h3{font-size: 15px; line-height: 19px;color: @verde;
+       a{color: @verde;
+         &:hover{color: @verde;}
+       }
+    }
+    h4,h5{font-size: 13px;}
+}
+
+
+.displaynone{display:none;}
+
+
+/**********/
+/* navbar */
+/**********/
+
+#navbar{
+    .wrapper-navbar{background: @azul;
+                    a{color: @blanco;}
+                    .navbar-left a{
+                        span{background: url(../images/logo-cms.png)no-repeat left top; display: block; text-indent: -1000em; height: 31px; width: 167px; margin: 0 10px 0 0;}
+                    }
+                    .navbar-right{
+                        p{color:@azul_verdoso;
+                          a{}
+                          a.logout{margin: 0 0 0 5px;
+                                   &:hover{color: #00F5CC;}}
+                          }
+                        }
+                    }
+
+                    #subnavbar{clear:both;
+                               .active,a:hover{color:@azul;}
+                               span{display: block; width: auto; text-align: center}
+                               .glyphicon,.fa{font-size: 25px;}
+                               li.divider{border-right: 1px solid @gris_borderboot;}
+
+                    }
+
+                    #subnavbar.in span{font-size: 14px; float: left; text-align: left; margin-right: 5px; line-height: 18px;}
+    }
+    
+    /*
+    * contenido del section
+    */
+    
+    
+
+    .wrapper-title{padding: 150px 0 0; border-bottom: 1px dotted #E2E2E2;
+                   h1{margin: 0; position:relative; padding:0 35px 0 0;
+                      .glyphicon, .fa{margin-right: 15px; }
+                   }
+                   a.add-item{margin: 20px 0 0;}
+                   span.badge{ margin: 0; font-size: 18px;position: absolute; bottom: 4px; right: 0;}
+    }
+
+    .breadcrumb{ background: #fff;
+
+    }
+    .form-search{width: auto;}
+
+
+    .puntuacion{display: block;}
+
+
+    .wrapper-pager{margin:20px 0;
+                   .pagination,p{margin: 0;}
+    }
+    
+    
+    
+    table h2 {
+    color: #00a2f3;
+    font-family: 'Noto Sans',sans-serif;
+    font-size: 15px;
+    letter-spacing: -1px;
+    margin: 5px 0;
+}
+
+.form-group.has-error{color: red;}
+
+
+
+
+ /**** footer ***/
+         footer{padding:10px 30px; margin:20px 0 0; background: @gris_bootstrap; border-top: 1px solid @gris_borderboot;}
+
